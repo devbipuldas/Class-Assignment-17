@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fixed-width{
+    width: 1240px;   
+    margin: auto;
+
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+   
+}
+
+.right{
+    float: right; 
+}
+.header-section{
+    background-color: black;
+    padding: 5px 0px;
+}
+.logo-pic{
+     float: left; 
+     width: 50%;
+  
+  }
+.logo-pic img{  
+    max-width: 70px;
+}
+
+.header-menu{
+    float: right; 
+    width: 50%;
+    
+} 
+
+.header-menu ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+.header-menu ul li a:hover{
+    border-bottom: 2px solid #fff;
+    
+}
+.header-menu ul li a{ 
+    padding: 10px 20px;
+    display: inline-block;
+    color: white; 
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s;
+    
+}
+.header-menu ul li ul{
+    position: absolute; 
+    left: 0;
+    background-color: black; 
+    width: 250px;
+    visibility: hidden;
+   opacity: 0; 
+    top: 115%; 
+}
+
+.header-menu ul li ul li{
+    display: block;
+    position: relative;
+}
+
+.header-menu ul li ul li a{
+    display: block;
+    color: rgb(247, 238, 238);
+    transition: .5s;
+}
+
+.header-menu ul li:hover  ul{
+   visibility: visible; 
+    opacity: 1;
+ border-top: 3px solid white; 
+}
+
+
+.header-menu ul li ul li a:hover{
+    color: black;
+    background-color: #fff;
+}
+.header-menu ul li ul li a::before{ 
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 13px;
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    visibility: visible;
+    opacity: 1;
+}
+/* banner section */
+.banner-section{
+    background: url(https://i.postimg.cc/FKnf5Q2Z/a0c6042d4612d7adf44692fffac7e082.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 200px 0; 
+
+}
+.banner-section h2{
+color: #223127;
+}
+.btn{ 
+    border-radius: 10px;
+ background-color: black; 
+    border: none;
+    margin-top: 20px;
+   
+}
+
+.btn a{ 
+    display: inline-block;
+    padding: 14px 25px;
+   text-decoration: none; 
+   color: white;
+   transition: .5s;
+}
+
+.btn a:hover{ 
+    background-color: rgb(250, 246, 246); 
+    color: rgb(10, 10, 10);
+    border-radius: 10px;  
+}
+.another-btn{
+    border-radius: 10px;
+    background-color: rgb(250, 246, 246); 
+    border: none;
+    margin: top;
+    margin-top: 20px; 
+    margin-left: 10px;
+}
+.another-btn a{
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none; 
+    color: rgb(10, 10, 10);
+    transition: .5s;
+}
+
+.another-btn a:hover{ 
+    background-color: rgb(12, 11, 11); 
+    color: rgb(248, 246, 246);
+    border-radius: 10px;  
+}
+/* about section */
+.about-section {
+    color: white;
+    text-align: center;
+   padding: 15px 0;
+    background-color: #87a471; 
+  }
+  .about-section h1{
+      color: #e8dfda;
+  }
+  .about-section span{
+border-bottom: 2px solid #e8dfda;
+
+  }
+.about-left-content{  
+float: left;
+width: 48%;
+text-align: justify;    
+margin-top: 50px; 
+/*! margin-left: 254px; */
+line-height: 20px; 
+}
+.about-right-pic{
+    float: right; 
+    width: 48%;
+     
+    /*! margin-right: 291px; */
+    margin-top: 15px;
+}
+img{
+    max-width: 100%;
+}
+.about-picture{
+width: 250px;
+}
+/* service-secton */
+.service-section{
+    background-color: #606a64;
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+    /*! margin-top: 100px; */
+}
+.service-title { 
+    width: 500px;
+    margin: auto;
+}
+.service-title h1{ 
+    color: #e8dfda;
+}
+.service-section .service-title span{
+    border-bottom: 2px solid #e8dfda;
+}
+
+
+.service-box{
+ padding: 20px;
+ background-color: #ffffff;
+ border-radius: 10px; 
+ margin-top: 44px;
+ /*! margin-left: 55px; */
+ color: black;
+ /*! display: inline-block; */
+ float: left;
+ width: 24.3%;
+ margin-left: 60px;
+}
+.service-logo span{ 
+    float: left;
+    width: 15%;
+    margin-right: 15px;
+}
+.service-content{
+    float: right;
+    width: 80%;
+    text-align: justify;
+}
+.service-content p{
+    color: #8a9bac;
+}
+/* work section */
+.work-section{
+    background-color: #87a471;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+.work-title p{
+    color: #e6e6e6;
+}
+.work-big-box{
+    margin-top: 40px;
+    
+}
+.big-box{
+    border: 1px solid white;
+    box-sizing: border-box;
+    height: 460px;
+}
+ .one{
+    float: left;
+    width: 48%;
+}
+.one h5{
+    color: #4e6886;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.one img{
+    width: 592px; 
+}
+ .two{
+    float: right; 
+    width: 48%; 
+} 
+.two h5{
+    color: #4e6886;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.two img{
+    width: 595px; 
+}
+.small-box{
+    margin-top: 40px;
+    
+}
+.small-box-one{
+    
+    float: left;
+    width: 25%;
+}
+.small-box-two{
+    float: left;
+    width: 25%;
+}
+.small-box-three{
+    
+    float: left;
+    width: 25%;
+}
+.small-box-four{
+    
+    float: left;
+    width: 25%;
+}
+/* member section */
+.member-section{
+    background-color: #5b9776;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+}
+.member-title h2{
+    position: relative; 
+}
+.member-title h2::before{
+content: "";
+position: absolute;
+bottom: -7px;
+left: 517px;
+width: 17%;
+height: 2px;
+background-color: #e0dbd4;
+}
+.member-picture{ 
+    float: left;
+    width: 33.3%;
+    margin-top: 30px;
+}
+
+.member-icon-one ul{   
+    
+    float: left;
+    width: 33.3%;
+    margin-top: 10px;
+}
+.member-icon-one ul li{
+    list-style: none;
+    display: inline-block; 
+    margin-left: 15px;
+    font-size: 25px;
+}
+.member-icon-one i{
+    transition: .5s;
+}
+.member-icon-one i:hover{
+color: rgb(233, 236, 8);
+}
+
+/* footer bottom */
+.footer-bottom{ 
+    background-color: #606a64; 
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+.footer-bottom-title{
+    width: 500px;
+    margin: auto;
+}
+.footer-bottom-title p{
+    color: #e6e6e6;
+}
+.fbuttan{  
+    background-color: #00bc9c;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    transition: .5s;
+}
+.btnn{
+    text-decoration: none;
+    color: white;
+}
+.fbuttan:hover{
+    background-color: #34485c;
+}
+/* footer section */
+.footer-section{
+    background-color: #000000;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
